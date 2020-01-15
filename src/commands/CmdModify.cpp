@@ -63,7 +63,7 @@ int CmdModify::execute (std::string&)
   filter.subset (filtered);
   if (filtered.size () == 0)
   {
-    Context::getContext ().footnote ("No tasks specified.");
+    Context::getContext ().footnote ("No tasks specified. Are you sure the task exists?");
     return 1;
   }
 
